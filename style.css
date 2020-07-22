@@ -1,4 +1,19 @@
-#pdfCanvas {
-    border: 1px solid black;
-    direction: ltr;
-  }
+#pdf-canvas {
+  border: 1px solid black;
+  direction: ltr;
+}
+
+#text-layer { 
+  position: absolute;
+   overflow: hidden;
+   opacity: 0.2;
+   line-height: 1.0;
+}
+
+#text-layer > div {
+   color: transparent;
+   position: absolute;
+   white-space: pre;
+   cursor: text;
+   transform-origin: 0% 0%;
+}
